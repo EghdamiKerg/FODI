@@ -15,7 +15,7 @@ Output:
 Options:
 
     -j [task] (0 or 1): Select between detecting overlapping candidates only (0) or outputting pairwise alignments in M4 format (1).
-    -d [fasta/fastq] : Input file.
+    -d [file] : Input file.
     -w [working folder] : Directory for temporary files.
     -t [# of threads] : Number of CPU threads.
     -o [output] : Output file name.
