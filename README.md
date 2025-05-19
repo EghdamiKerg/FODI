@@ -38,7 +38,7 @@ For this demonstration, we will use a subset of PacBio reads from an *E. coli* d
 To run the overlap detection tool with the provided sample data, use the following parameters:
 
 ```bash
-your_tool_name -j 0 -d /path/to/ecoli.fastq -o output.can -w owrk -x 0 -n 100 -a 2000
+ -j 0 -d /path/to/ecoli.fastq -o output.can -w owrk -x 0 -n 100 -a 2000
 
 Where:
 
