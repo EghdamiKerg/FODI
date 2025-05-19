@@ -25,33 +25,40 @@ Options:
     -x [0/1] : Sequencing platform (0 for PacBio, 1 for Nanopore).
 
 Note: The -n parameter is crucial for optimizing FODI's performance. It's recommended to adjust this parameter based on genome size and read length.
-
-Demo
+## Demo
 
 This section provides a quick demonstration of how to use our long-read overlap detection tool with a sample dataset.
 
-Sample Data
+### Sample Data
 
-For this demonstration, we will use a subset of PacBio reads from an E. coli dataset. You can download the FASTQ file from https://goo.gl/Z75V5R.
+For this demonstration, we will use a subset of PacBio reads from an *E. coli* dataset. You can download the FASTQ file from https://goo.gl/Z75V5R.
 
-Running the Tool
+### Running the Tool
 
 To run the overlap detection tool with the provided sample data, use the following parameters:
 
--j 0 -d /path/to/ecoli.fastq -o output.can -w owrk -x 0 -n 100
+```bash
+your_tool_name -j 0 -d /path/to/ecoli.fastq -o output.can -w owrk -x 0 -n 100 -a 2000
 
 Where:
 
-•	-j 0: specifies the task is detecting overlapping candidates
-•	-d /path/to/ecoli_clipped.fastq: Specifies the path to the input FASTQ file. Replace /path/to/ecoli_clipped.fastq with the actual path to the downloaded ecoli_clipped.fastq file.
-•	-o output.can: Specifies the output file name (in can format).
-•	-w owrk: specifies the path to the Directory of temporary files
-•	-x 0: Pacbio sequencing platform is used
-•	-n 100: specifies number of candidates
-•	-a 2000: specifies Minimum overlap size
+    -j 0: specifies the task is detecting overlapping candidates
+
+    -d /path/to/ecoli_clipped.fastq: Specifies the path to the input FASTQ file. Replace /path/to/ecoli_clipped.fastq with the actual path to the downloaded ecoli_clipped.fastq file.
+
+    -o output.can: Specifies the output file name (in can format).
+
+    -w owrk: specifies the path to the Directory of temporary files
+
+    -x 0: Pacbio sequencing platform is used
+
+    -n 100: specifies number of candidates
+
+    -a 2000: specifies Minimum overlap size
 
 Expected Output
 
-If the job is detecting overlapping candidates, the results are output in can format, each result of which occupies one line and 9 fields:
+If the job is detecting overlapping candidates, the results are output in can format, with each result on one line and containing 9 fields:
+
 [A ID] [B ID] [A strand] [B strand] [A gapped start] [B gapped start] [voting score] [A length] [B length]
 
