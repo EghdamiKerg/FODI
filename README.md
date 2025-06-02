@@ -68,9 +68,8 @@ To run the tool, follow these steps:
 To run the overlap detection tool with the provided sample data, use the following parameters:
 
 ```bash
-./firstCodeBlocksProject -j 0 -d /path/to/ecoli.fastq -o output.can -w owrk -x 0 -n 100 -a 2000 -t 8   ```
-
-
+./firstCodeBlocksProject -j 0 -d /path/to/ecoli.fastq -o output.can -w owrk -x 0 -n 100 -a 2000 -t 8
+```
 
 Where:
 
