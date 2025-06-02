@@ -70,6 +70,8 @@ To run the overlap detection tool with the provided sample data, use the followi
 ```bash
 ./firstCodeBlocksProject -j 0 -d /path/to/ecoli.fastq -o output.can -w owrk -x 0 -n 100 -a 2000 -t 8   ```
 
+
+
 Where:
 
     -j 0: specifies the task is detecting overlapping candidates
