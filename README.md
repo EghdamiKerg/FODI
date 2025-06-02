@@ -63,8 +63,9 @@ To run the tool, follow these steps:
 6.  **Run the executable with desired parameters:**
     Execute the program from the terminal, providing the necessary parameters.
 
-    **Example Usage:**
-    To run the overlap detection tool with the provided sample data, use the following parameters:
+## Example Usage
+
+To run the overlap detection tool with the provided sample data, use the following parameters:
     
     ```bash
     ./firstCodeBlocksProject -j 0 -d /path/to/ecoli.fastq -o output.can -w owrk -x 0 -n 100 -a 2000 -t 8
