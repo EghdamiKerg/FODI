@@ -37,26 +37,20 @@ For this demonstration, we will use a subset of PacBio reads from an *E. coli* d
 
 To run the tool, follow these steps:
 
-    Clone the repository:
+1- Clone the repository:
     Bash
+    git clone https://github.com/EghdamiKerg/FODI.git
 
-git clone https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github
+2- Navigate into the project directory.
+3- Open the Code::Blocks project file: Launch Code::Blocks IDE and open the .cbp file located in the root of the project directory.
 
-Navigate into the project directory:
-Bash
+4- Compile the project: In Code::Blocks, go to Build > Build or press Ctrl+F9. This will compile the source code and generate the executable.
 
-cd YourProjectName
-
-Open the Code::Blocks project file: Launch Code::Blocks IDE and open the .cbp file located in the root of the project directory.
-
-Compile the project: In Code::Blocks, go to Build > Build or press Ctrl+F9. This will compile the source code and generate the executable.
-
-Navigate to the executable directory: Open your terminal and change directory to the location of the compiled executable:
-Bash
-
+5- Navigate to the executable directory: Open your terminal and change directory to the location of the compiled executable:
+    Bash
     cd bin/Debug/
 
-Run the executable with desired parameters: Execute the program from the terminal, providing the necessary parameters.
+6-Run the executable with desired parameters: Execute the program from the terminal, providing the necessary parameters.
 
 Example Usage:
 
