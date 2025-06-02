@@ -34,13 +34,12 @@ This section provides a quick demonstration of how to use our long-read overlap 
 For this demonstration, we will use a subset of PacBio reads from an *E. coli* dataset. You can download the FASTQ file from https://goo.gl/Z75V5R.
 
 #### Running the Tool
-### Running the Tool
 
 To run the tool, follow these steps:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/EghdamiKerg/FODI.git](https://github.com/EghdamiKerg/FODI.git)
+    git clone https://github.com/EghdamiKerg/FODI.git
     ```
 
 2.  **Navigate into the project directory.**
