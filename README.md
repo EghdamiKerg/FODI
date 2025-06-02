@@ -43,9 +43,9 @@ To run the tool, follow these steps:
     ```
 
 2.  **Navigate into the project directory.**
-    (Assuming `FODI` is the project directory name after cloning)
+    (Assuming `FODI-main` is the project directory name after cloning)
     ```bash
-    cd FODI
+    cd FODI-main
     ```
 
 3.  **Open the Code::Blocks project file:**
