@@ -29,11 +29,11 @@ Note: The -n parameter is crucial for optimizing FODI's performance. It's recomm
 
 This section provides a quick demonstration of how to use our long-read overlap detection tool with a sample dataset.
 
-### Sample Data
+## Sample Data
 
 For this demonstration, we will use a subset of PacBio reads from an *E. coli* dataset. You can download the FASTQ file from https://goo.gl/Z75V5R.
 
-#### Running the Tool
+## Running the Tool
 
 To run the tool, follow these steps:
 
@@ -86,7 +86,7 @@ Where:
 
     -a 2000: specifies Minimum overlap size
 
-Expected Output
+## Expected Output
 
 If the job is detecting overlapping candidates, the results are output in can format, with each result on one line and containing 9 fields:
 
