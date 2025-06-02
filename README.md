@@ -34,31 +34,42 @@ This section provides a quick demonstration of how to use our long-read overlap 
 For this demonstration, we will use a subset of PacBio reads from an *E. coli* dataset. You can download the FASTQ file from https://goo.gl/Z75V5R.
 
 #### Running the Tool
+### Running the Tool
 
 To run the tool, follow these steps:
 
-1- Clone the repository:
-    Bash
-    git clone https://github.com/EghdamiKerg/FODI.git
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/EghdamiKerg/FODI.git](https://github.com/EghdamiKerg/FODI.git)
+    ```
 
-2- Navigate into the project directory.
-3- Open the Code::Blocks project file: Launch Code::Blocks IDE and open the .cbp file located in the root of the project directory.
+2.  **Navigate into the project directory.**
+    (Assuming `FODI` is the project directory name after cloning)
+    ```bash
+    cd FODI
+    ```
 
-4- Compile the project: In Code::Blocks, go to Build > Build or press Ctrl+F9. This will compile the source code and generate the executable.
+3.  **Open the Code::Blocks project file:**
+    Launch Code::Blocks IDE and open the `.cbp` file located in the root of the project directory.
 
-5- Navigate to the executable directory: Open your terminal and change directory to the location of the compiled executable:
-    Bash
+4.  **Compile the project:**
+    In Code::Blocks, go to `Build` > `Build` or press `Ctrl+F9`. This will compile the source code and generate the executable.
+
+5.  **Navigate to the executable directory:**
+    Open your terminal and change directory to the location of the compiled executable:
+    ```bash
     cd bin/Debug/
+    ```
 
-6-Run the executable with desired parameters: Execute the program from the terminal, providing the necessary parameters.
+6.  **Run the executable with desired parameters:**
+    Execute the program from the terminal, providing the necessary parameters.
 
-Example Usage:
-
-To run the overlap detection tool with the provided sample data, use the following parameters:
-Bash
-
-./firstCodeBlocksProject -j 0 -d /path/to/ecoli.fastq -o output.can -w owrk -x 0 -n 100 -a 2000 -t 8
-
+    **Example Usage:**
+    To run the overlap detection tool with the provided sample data, use the following parameters:
+    
+    ```bash
+    ./firstCodeBlocksProject -j 0 -d /path/to/ecoli.fastq -o output.can -w owrk -x 0 -n 100 -a 2000 -t 8
+    ```
 
 Where:
 
