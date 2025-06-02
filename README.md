@@ -33,12 +33,38 @@ This section provides a quick demonstration of how to use our long-read overlap 
 
 For this demonstration, we will use a subset of PacBio reads from an *E. coli* dataset. You can download the FASTQ file from https://goo.gl/Z75V5R.
 
-### Running the Tool
+#### Running the Tool
+
+To run the tool, follow these steps:
+
+    Clone the repository:
+    Bash
+
+git clone https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github
+
+Navigate into the project directory:
+Bash
+
+cd YourProjectName
+
+Open the Code::Blocks project file: Launch Code::Blocks IDE and open the .cbp file located in the root of the project directory.
+
+Compile the project: In Code::Blocks, go to Build > Build or press Ctrl+F9. This will compile the source code and generate the executable.
+
+Navigate to the executable directory: Open your terminal and change directory to the location of the compiled executable:
+Bash
+
+    cd bin/Debug/
+
+Run the executable with desired parameters: Execute the program from the terminal, providing the necessary parameters.
+
+Example Usage:
 
 To run the overlap detection tool with the provided sample data, use the following parameters:
+Bash
 
-```bash
- -j 0 -d /path/to/ecoli.fastq -o output.can -w owrk -x 0 -n 100 -a 2000
+./firstCodeBlocksProject -j 0 -d /path/to/ecoli.fastq -o output.can -w owrk -x 0 -n 100 -a 2000 -t 8
+
 
 Where:
 
